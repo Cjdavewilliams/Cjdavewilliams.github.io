@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/b5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background-color: #000; */
+}
+
+/* Beginning of navbar*/
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.city-name {
+    color: #fff;
+    font-family: cursive;
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.sign-in {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 35px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-family: cursive;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.header {
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+.card {
+    width: 400px;
+    height: 430px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card-1 {
+    background-image: url(../images/bali3.jpg);
+}
+.card-2 {
+    background-image: url(../images/bali4.jpg);
+}
+.card-3 {
+    background-image: url(../images/bali1.webp);
+}
+.card-4 {
+    background-image: url(../images/bali2.webp);
+}
+.card-5 {
+    background-image: url(../images/bali5.jpg);
+}
+.card-6 {
+    background-image: url(../images/hotel1.jpg);
+}
+
+h4 {
+    color: darkblue;
+    text-decoration-line: underline;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+
+.btn{
+    width: 240px;
+    height: 80px;
+    background: darkblue;
+    border: none;
+    font-size: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #fff;
+    color: darkblue;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

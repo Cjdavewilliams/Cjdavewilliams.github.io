@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+  <div class="main">
+    <nav>
+        <h2 class="city-name">Mombasa</h2>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="hotel.html">Hotels Here</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <div class="inner-form" id="form">
+            <div class="form-front">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btn"><a href="https://www.booking.com/hotel/it/serena-roma.en-gb.html?aid=311984&label=slbn_new_sitelinks-SxgGJdB6mLJH%2AnEVnTOP2QS253769982410%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-489645799392%3Alp1009824%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=ae3fdbe8b9c9fb3c591f0919c8f033f9&dest_id=85938;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1668026107;srpvid=7ae590bc26090158;type=total;ucfs=1&#hotelTmpl">Login</a></button>
+
+                <p class="link">Don't have an account?<br>
+                    <a href="#" onclick="openRegister()">Sign up </a> here</p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icon">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+            
+            </div>
+            <div class="form-back">
+                <h2>Register</h2>
+                <input type="text" name="email" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btn"><a href="https://www.booking.com/hotel/it/serena-roma.en-gb.html?aid=311984&label=slbn_new_sitelinks-SxgGJdB6mLJH%2AnEVnTOP2QS253769982410%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-489645799392%3Alp1009824%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=ae3fdbe8b9c9fb3c591f0919c8f033f9&dest_id=85938;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1668026107;srpvid=7ae590bc26090158;type=total;ucfs=1&#hotelTmpl">Sign Up</a></button>
+
+                <p class="link">Already have an account?<br>
+                    <a href="#"  onclick="openLogin()">Sign in </a> here</p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icon">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+            </div>
+        </div>
+
+  </div>
+  
+  <script>
+
+    var form = document.getElementById("form");
+    function openRegister(){
+        form.style.transform = "rotateY(-180deg)";
+    }
+    function openLogin(){
+        form.style.transform = "rotateY(0deg)";
+    }
+
+</script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>

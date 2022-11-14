@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mombasa Heritage</title>
+
+    <link rel="stylesheet" href="css/heritage.css">
+
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <h2 class="city-name">Mombasa</h2>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="hotel.html">Hotel Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a href="login.html"><img src="images/logo.png" class="sign-in"></a>
+        </nav>
+        <br>
+        <div class="header">
+            <h2>Mombasa's Proud Heritage</h2>
+        </div>
+        <section>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="beaches">Beaches</li>
+                <li class="list" data-filter="historical">Historical</li>
+                <li class="list" data-filter="wildlife">Wildlife</li>
+                <li class="list" data-filter="infrastructure">Infrastructure</li>
+            </ul>
+            <div class="product">
+                <div class="itemBox beaches">
+                    <img src="images/beach3.jpg">
+                    <h5><a href="http://www.dianibeach-kenya.com/">Diani Beach</a></h5>
+                </div>
+                <div class="itemBox historical ">
+                    <img src="images/heritage2.jpg">
+                    <h5><a href="">Sultan Hammud</a></h5>
+                </div>
+                <div class="itemBox wildlife">
+                    <img src="images/w1.jpg">
+                    <h5><a href="http://www.kws.go.ke/content/mombasa-marine-national-park-reserve">Mombasa National Park</a></h5>
+                </div>
+                <div class="itemBox infrastructure">
+                    <img src="images/a1.jpg">
+                    <h5><a href="">Mombasa International Airport</a></h5>
+                </div>
+                <div class="itemBox beaches">
+                    <img src="images/beach6.jpg">
+                    <h5><a href="">Voi Beach</a></h5>
+                </div>
+                <div class="itemBox historical ">
+                    <img src="images/heritage1.jpg">
+                    <h5><a href="">Fortress of Solitude</a></h5>
+                </div>
+                <div class="itemBox wildlife">
+                    <img src="images/apes.webp">
+                    <h5><a href="">Planet Apes</a></h5>
+                </div>
+                <div class="itemBox infrastructure">
+                    <img src="images/i1.jpg">
+                    <h5><a href="">Mombasa Express Way</a></h5>
+                </div>
+                <div class="itemBox beaches">
+                    <img src="images/beach4.jpg">
+                    <h5><a href="">Pwani</a></h5>
+                </div>
+                <div class="itemBox historical ">
+                    <img src="images/heritage4.jpg">
+                    <h5><a href="">Dome Inic</a></h5>
+                </div>
+                <div class="itemBox wildlife">
+                    <img src="images/lion1.jpg">
+                    <h5><a href="">Animal Orphanage</a></h5>
+                </div>
+                <div class="itemBox infrastructure">
+                    <img src="images/i2.jpg">
+                    <h5><a href="">Mombasa Harbour</a></h5>
+                </div>
+             
+            </div>
+        </section>
+        
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all'){
+                    $('.itemBox').show('1000');
+                }
+                else{
+                    $('.itemBox').not('.'+value).hide('1000');
+                    $('.itemBox').filter('.'+value).show('1000');
+                }
+            })
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
